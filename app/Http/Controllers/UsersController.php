@@ -80,8 +80,8 @@ class UsersController extends Controller
     {
         // $jwt = JWTAuth::toUser('');
         // return $token;
-        // return JWTAuth::parseToken()->authenticate()->username;
-        return Auth::user();
+        return JWTAuth::parseToken()->authenticate();
+        // return Auth::user()->username;
     }
     
     public function logout(Request $request)

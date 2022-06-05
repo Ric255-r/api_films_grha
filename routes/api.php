@@ -35,7 +35,7 @@ Route::post('/rating', 'RatingController@store');
 Route::delete('/rating/{id}', 'RatingController@destroy');
 
 //Autentikasi
-// Route::post('/login', 'UsersController@login');
-// Route::post('/register', 'UsersController@register');
-// Route::post('/logout', 'UsersController@logout');
-// Route::get('/me', 'UsersController@me');
+Route::post('/login', 'UsersController@login');
+Route::post('/register', 'UsersController@register');
+Route::post('/logout', 'UsersController@logout');
+Route::get('/me', 'UsersController@me');
